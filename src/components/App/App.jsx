@@ -4,7 +4,7 @@ import friends from 'components/Friends/friends.json';
 import transactions from 'components/Transactions/transactions.json';
 import { Profile } from 'components/SocialProfile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
-import { FriendListItem } from 'components/Friends/FriendListItem';
+import { FriendList } from 'components/FriendList/FriendList';
 import { TransactionHistory } from 'components/Transactions/TransactionHistory'; 
 import { Container } from './App.styled.jsx';
 
