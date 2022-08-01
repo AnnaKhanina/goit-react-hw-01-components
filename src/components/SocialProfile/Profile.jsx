@@ -9,7 +9,7 @@ import {
   StatsItem,
   Label,
   Quantity,
-} from './Profile.styled.jsx.js';
+} from './Profile.styled.jsx';
 
 export const Profile = ({
   username,
