@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const Card = styled.div`
   margin: 0 auto;
-  width: 300px;
+  width: 500px;
   background-color: #fafafa;
   border-radius: 5px;
-  box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.41);
+  box-shadow: 2px 3px 12px 2px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 `;
 
@@ -20,7 +20,7 @@ export const Avatar = styled.img`
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: #E5CCFF;
 `;
 
 export const UserName = styled.p`

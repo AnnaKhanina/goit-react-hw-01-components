@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 
+
 export const FriendItem = styled.li`
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 0 15px;
+  align-content: center;
+  padding: 0 30px;
   width: 100%;
   height: 80px;
   background-color: #fafafa;
   border-radius: 5px;
-  box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.41);
+  box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 
   :not(:last-child) {
@@ -26,7 +28,7 @@ export const Status = styled.span`
 
 export const Avatar = styled.img`
   margin-left: 15px;
-  width: 60px;
+  width: 55px;
   border-radius: 5px;
 `;
 

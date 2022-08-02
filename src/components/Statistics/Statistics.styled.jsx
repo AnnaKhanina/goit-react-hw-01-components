@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import getRandomColor from 'components/RandomColor/RandomColor';
 
 export const Container = styled.section`
   margin: 20px auto 0 auto;
-  width: 300px;
+  width: 500px;
   background-color: #fafafa;
   border-radius: 5px;
-  box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.41);
+  box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 `;
 
@@ -31,7 +32,7 @@ export const StatItem = styled.li`
   flex-direction: column;
   padding: 10px 0;
   width: 100%;
-  background-color: blue;
+  background-color: ${getRandomColor};
 `;
 
 export const Label = styled.span``;
