@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { App } from 'components/App/App';
 import './index.css';
 import {theme} from './theme';
-import { ThemeApp } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 
 
 // ReactDOM.render(
@@ -16,8 +16,8 @@ import { ThemeApp } from 'styled-components';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ThemeApp theme={theme}>
+    <ThemeProvider theme={theme}>
     <App />
-    </ThemeApp>
+    </ThemeProvider>
   </React.StrictMode>
 );

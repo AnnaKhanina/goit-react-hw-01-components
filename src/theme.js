@@ -39,9 +39,9 @@ export const theme = {
       round:"50%",  
     },
     collapse: {
-        col:collapse,
-        sep:separate,
-    }
+        col:"collapse",
+        sep:"separate",
+    },
     sizes: {
       xxs:"20px",
       xs:"50px",  

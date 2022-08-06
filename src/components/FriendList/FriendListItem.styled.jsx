@@ -10,9 +10,9 @@ export const FriendItem = styled.li`
   padding: ${p => p.theme.space[0]} ${p => p.theme.space[5]}px;
   width: ${p => p.theme.sizes.all};
   height: ${p => p.theme.sizes.s};
-  background-color: ${p=>p.theme.colors.mainBackgroundColor};
-  border-radius: ${p=>p.theme.radii.s};
-  box-shadow: ${p=>p.theme.boxShadow.main};  
+  background-color: ${p => p.theme.colors.mainBackgroundColor};
+  border-radius: ${p => p.theme.radii.s};
+  box-shadow: ${p => p.theme.boxShadow.main};  
 
   :not(:last-child) {
     margin-bottom: ${p => p.theme.space[3]}px;
@@ -22,10 +22,8 @@ export const FriendItem = styled.li`
 export const Status = styled.span`
   width: ${p => p.theme.sizes.xxs};
   height: ${p => p.theme.sizes.xxs};
-  border-radius: ${p=>p.theme.radii.round};
-  background-color: ${({theme, isOnline})=> {
-    return isOnline ? theme.colors.green : theme.colors.red;
-    }};
+  border-radius: ${p => p.theme.radii.round};
+  background-color: ${p => (p.status ? 'green' : 'red')};
 `;
 
 export const Avatar = styled.img`

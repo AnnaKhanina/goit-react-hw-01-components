@@ -32,7 +32,7 @@ export const UserName = styled.p`
 export const UserInfo = styled.p`
   margin-top: ${p => p.theme.space[3]}px;
   font-size: ${p => p.theme.fontSizes.m};
-  color: ${p.theme.colors.grey};
+  color: ${p => p.theme.colors.grey};
 `;
 
 export const StatsList = styled.ul`
@@ -56,7 +56,7 @@ export const StatsItem = styled.li`
 `;
 
 export const Label = styled.span`
-  color: ${p.theme.colors.grey};
+  color: ${p => p.theme.colors.grey};
 `;
 
 export const Quantity = styled.span`
