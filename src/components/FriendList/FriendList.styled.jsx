@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.ul`
-  margin: 20px auto 0 auto;
-  width: 500px;
-  padding: 0;
+  margin: ${p => p.theme.space[4]}px ${p => p.theme.space[9]} ${p => p.theme.space[0]}px ${p => p.theme.space[9]};
+  width: ${p=> p.theme.sizes.m};
+  padding: ${p => p.theme.space[0]};
 `;

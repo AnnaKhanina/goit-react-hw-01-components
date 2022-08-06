@@ -1,29 +1,29 @@
 import styled from 'styled-components';
 
 export const Table = styled.table`
-  margin: 20px auto 0 auto;
-  width: 500px;
+  margin: ${p => p.theme.space[5]}px ${p => p.theme.space[9]} ${p => p.theme.space[0]} ${p => p.theme.space[9]};
+  width: ${p => p.theme.sizes.l};
 
-  border-collapse: collapse;
+  border-collapse: ${p=>p.theme.collapse.col};
   border-spacing: 0;
-  border-radius: 5px;
-  background-color: #fafafa;
-  box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.5);
+  border-radius: ${p=>p.theme.radii.s};
+  background-color: ${p=>p.theme.colors.mainBackgroundColor};
+  box-shadow: ${p=>p.theme.boxShadow.main}; 
   overflow: hidden;
 `;
 
 export const TableHead = styled.tr`
-  height: 40px;
-  background-color: #18E9FF;
+  height: 40px; 
   text-align: center;
   text-transform: uppercase;
-  color: white;
+  background-color: ${p=>p.theme.colors.tableBackgroundColor};
+  color: ${p=>p.theme.colors.main};
 
   th {
     width: calc(100% / 3);
 
     :not(:last-child) {
-      border-right: 1px solid #9B9E9E;
+      border-right: ${p=>p.theme.borders.normal} ${p=>p.theme.colors.tableColumnColor};
     }
   }
 `;
@@ -34,12 +34,12 @@ export const TableItem = styled.tr`
   text-transform: capitalize;
 
   &:nth-child(even) {
-    background-color: #CED6D7;
+    background-color: ${p=>p.theme.colors.tableRowColor};
   }
 
   td {
     :not(:last-child) {
-      border-right: 1px solid #079aab;
+      border-right: ${p=>p.theme.borders.normal} ${p=>p.theme.colors.aqua};
     }
   }
 `;
