@@ -33,7 +33,7 @@ export const StatItem = styled.li`
   padding: ${p => p.theme.space[4]};px ${p => p.theme.space[0]};
   width: ${p => p.theme.sizes.all};
   background-color: ${getRandomColor};
-`;
+  `;
 
 export const Label = styled.span``;
 
